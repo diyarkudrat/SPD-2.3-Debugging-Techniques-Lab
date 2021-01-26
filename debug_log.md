@@ -23,7 +23,9 @@ _Then I noticed another bug ..._
 
 ## Exercise 2
 
-[[Your answer goes here!]]
+    - I noticed that the program was fetching the API key from a .env file, but there was no such file in the directory. So I added the .env file that contains the API key in it.
+    - Another bug was that there was no data being retrieved from the API. So, I used the divide and conquer technique where I made breakpoints between the different code sections. I discovered that the program wasn't getting the correct info from the HTML form. Also discovered that the way the API is being called is wrong. I looked up the docs to the API and found the correct way to make an API Call. By making these changes, the program was able to retrieve data from the API.
+    - Found another bug where the program should get the temperature from the json data, but threw an error saying that it couldn't find temperature in the json data. I used the trace backward technique, and discovered that the naming was wrong in the program. In the JSON data, the temperature is defined as 'temp', so I changed 'temperature' to 'temp' on line 54.
 
 ## Exercise 3
 
