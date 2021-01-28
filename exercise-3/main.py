@@ -10,5 +10,5 @@ if __name__ == '__main__':
     print('Sorted list of nums is:')
     print(list_of_nums)
 
-    index_of_5 = binary_search(list_of_nums, 5)
-    print(f'Index of 5 is: {index_of_5}')
+    # index_of_5 = binary_search(list_of_nums, 5)
+    # print(f'Index of 5 is: {index_of_5}')

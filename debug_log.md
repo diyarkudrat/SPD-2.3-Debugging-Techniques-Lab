@@ -29,4 +29,11 @@ _Then I noticed another bug ..._
 
 ## Exercise 3
 
-[[Your answer goes here!]]
+    - Error ocurred for the merge sort algorithm where it says that the index is out of range on line 38. Noticed that on line 38, there is a typo. It was using the index variable for the left subarray rather than the right subarray
+
+    - The ouput sorted array was completely wrong, so I used the divide and conquer technique to figure out where things went wrong. I discovered that there were numerous typos in the code that deals with the merging. The right and left halves of the subarrays were being mixed up in the main while loop(line 23 - 30) along with the indexes
+
+    - Another bug that I found while doing the divide and conquer technique is that the index for the sorted array wasn't being updated in both while loops that take care of extra numbers that haven't been visited in either halves of the subarray (line 33 - 40)
+
+    - There's a bug where the middle index should be a whole number, but it's returning a float. Solved this by changing to floor division when calculating the middle index
+    - Another bug came up where the program shouldn't exit out of the while loop when both pointers are equal to each other. Solved this by changing the while loop conditional from '<' to '<='
